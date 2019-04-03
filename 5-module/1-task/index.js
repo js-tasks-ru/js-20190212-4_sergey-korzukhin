@@ -31,7 +31,6 @@ function highlight(table) {
 
         if (+table.rows[i].cells[1].innerText < 18) table.rows[i].setAttribute("style", "text-decoration: line-through");
 
-        console.log (table.rows[i].classList);
     }
 
 }

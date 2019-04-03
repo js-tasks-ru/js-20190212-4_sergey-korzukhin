@@ -39,19 +39,3 @@ function find (obj, value) {
     if (propertyPaths.length === 1) return propertyPaths[0];
     return propertyPaths;
 }
-/*
-function clonePartial (obj, value) {
-    let clonedObject = {};
-    if (obj === null) return obj;
-    for (let prop in obj) {
-        if (obj.hasOwnProperty(prop)){
-            if (typeof (obj[prop]) === "object") {
-                clonedObject[prop] = clone (obj[prop]);
-            }
-            else {
-                if (obj[prop] === value) clonedObject[prop] = obj[prop];
-            }
-        }
-    }
-    return clonedObject;
-}*/
