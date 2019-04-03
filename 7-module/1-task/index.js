@@ -9,4 +9,14 @@
  */
 function makeLogging(fn, log) {
 
+
+    return function() {
+        let result = fn.apply(this, arguments);
+        let temp = [];
+        for (let argument in arguments){
+            temp.push(arguments[argument]);
+        }
+        log.push(temp);
+        return result;
+    }
 }
